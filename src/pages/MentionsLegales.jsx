@@ -31,8 +31,8 @@ export default function MentionsLegales() {
               <p className="font-corps font-light text-encre/75 leading-relaxed">
                 <strong className="font-medium">ImmoPilot</strong><br />
                 Micro-entreprise / Auto-entrepreneur<br />
-                SIRET : <span className="bg-ardoise-pale/50 px-1 font-medium text-ardoise">[À COMPLÉTER — SIRET]</span><br />
-                Adresse : <span className="bg-ardoise-pale/50 px-1 font-medium text-ardoise">[À COMPLÉTER — ADRESSE COMPLÈTE]</span><br />
+                SIRET : 10298942300011<br />
+                Adresse : La Wantzenau, 67610, France<br />
                 Email :{' '}
                 <a
                   href="mailto:contact@immopilot-ia.fr"
