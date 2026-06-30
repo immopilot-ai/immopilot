@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Button from '../ui/Button'
 
 export default function CTAFinal() {
@@ -24,12 +25,23 @@ export default function CTAFinal() {
             mettre en place. Si ça n'a pas de sens pour vous, on vous le dit aussi.
           </p>
 
-          {/* CTA */}
+          {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button href="mailto:contact@immopilot-ia.fr" variant="primary">
-              Prendre contact
-            </Button>
-            <Button href="https://calendar.google.com/calendar/embed?src=contact%40immopilot-ia.fr&ctz=Europe%2FParis" variant="secondary" target="_blank" rel="noopener noreferrer">
+            {/* Bouton principal — formulaire de qualification */}
+            <Link
+              to="/qualification"
+              className="inline-flex items-center justify-center font-corps font-medium text-base bg-ardoise text-blanc px-7 py-3.5 hover:bg-ardoise-profonde transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ardoise"
+            >
+              Remplir le formulaire
+            </Link>
+
+            {/* Bouton secondaire — Google Agenda */}
+            <Button
+              href="https://calendar.google.com/calendar/embed?src=contact%40immopilot-ia.fr&ctz=Europe%2FParis"
+              variant="secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Choisir un créneau
             </Button>
           </div>
