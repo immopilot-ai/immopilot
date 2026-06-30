@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles de base globaux */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-blanc text-encre font-corps font-light antialiased;
+  }
+
+  /* Fraunces SemiBold pour les titres, pas uppercase (style display serif) */
+  h1, h2, h3, h4 {
+    @apply font-titre font-semibold leading-none tracking-tight;
+  }
+
+  /* Focus visible accessible */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ardoise;
+  }
+}
+
+@layer utilities {
+  /* Conteneur centré réutilisable */
+  .conteneur {
+    @apply max-w-contenu mx-auto px-5 md:px-8 lg:px-12;
+  }
+}
