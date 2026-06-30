@@ -29,7 +29,7 @@ export default function CTAFinal() {
             <Button href="mailto:contact@immopilot-ia.fr" variant="primary">
               Prendre contact
             </Button>
-            <Button href="https://cal.com" variant="secondary">
+            <Button href="https://calendar.google.com/calendar/embed?src=contact%40immopilot-ia.fr&ctz=Europe%2FParis" variant="secondary" target="_blank" rel="noopener noreferrer">
               Choisir un créneau
             </Button>
           </div>
