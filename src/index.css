@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Styles de base globaux */
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -12,20 +11,41 @@
     @apply bg-blanc text-encre font-corps font-light antialiased;
   }
 
-  /* Fraunces SemiBold pour les titres, pas uppercase (style display serif) */
   h1, h2, h3, h4 {
+    /* Fraunces SemiBold pour les titres display */
     @apply font-titre font-semibold leading-none tracking-tight;
   }
 
-  /* Focus visible accessible */
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-ardoise;
   }
 }
 
 @layer utilities {
-  /* Conteneur centré réutilisable */
   .conteneur {
     @apply max-w-contenu mx-auto px-5 md:px-8 lg:px-12;
+  }
+}
+
+/* Animation d'apparition hero — fade + légère montée */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.5s ease-out both;
+}
+
+/* Respecte la préférence utilisateur pour les animations réduites */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
   }
 }

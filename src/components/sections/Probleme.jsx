@@ -22,7 +22,7 @@ const frustrations = [
 
 export default function Probleme() {
   return (
-    <section className="bg-blanc border-t border-ardoise-pale py-20 md:py-32">
+    <section id="probleme" className="bg-blanc border-t border-ardoise-pale py-20 md:py-32">
       <div className="conteneur">
         {/* En-tête de section */}
         <p className="font-corps font-medium text-ardoise uppercase tracking-[0.22em] text-xs mb-6">
