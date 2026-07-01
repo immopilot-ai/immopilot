@@ -8,15 +8,11 @@ export default function Footer() {
           {/* Logo + baseline */}
           <div>
             <Link to="/" aria-label="ImmoPilot — accueil">
-              {/*
-                Le logo SVG a un fond sombre dans ses déclinaisons :
-                on filtre pour forcer la version claire sur fond ardoise.
-                Si le SVG est déjà adaptatif, supprimer le filtre.
-              */}
+              {/* Logo blanc — lisible directement sur le fond ardoise profonde */}
               <img
-                src="/logo.svg"
+                src="/logo-immopilot.png"
                 alt="ImmoPilot"
-                className="h-9 w-auto brightness-0 invert opacity-80"
+                className="h-9 w-auto"
               />
             </Link>
             <p className="font-corps font-light text-sm mt-3 text-ardoise-pale/80 max-w-xs">

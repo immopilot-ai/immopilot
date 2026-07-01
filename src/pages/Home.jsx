@@ -16,7 +16,7 @@ export default function Home() {
         Aller au contenu
       </a>
 
-      <Header />
+      <Header overlayHero />
 
       <main id="contenu-principal">
         <Hero />
